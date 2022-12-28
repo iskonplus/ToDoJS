@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,21 +8,24 @@
     <title>To do</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <div class="main_wrapper">
 
         <header>
             <div class="wrapper_buttun_log">
-                <input type="button" value="Log in">
-                <input type="button" value="Registration">
-                <input type="button" value="Log out" hidden>
+                <input type="button" value="Login" class="button">
+                <input type="button" value="Registration" class="button">
+                <input type="button" value="Log out" hidden class="button">
             </div>
         </header>
 
         <main>
-            <article class="article_greetings">
-                
+
+            <!-- --------------------greetings---------------- -->
+            <article class="article_greetings active">
+
                 <div class="wrapper_greetings">
                     <h1>Hello this is the best app for save your To do.</h1>
                     <p>Login or register to continue...</p>
@@ -29,7 +33,33 @@
 
             </article>
 
-            <article class="article_logIn"></article>
+            <!-- --------------------article registration_or_logIn---------------- -->
+            <article class="article registration_or_logIn">
+                <h2>Enter your details</h2>
+
+                <form action="">
+
+                    <div class="wrapper_input_log name active">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" placeholder="Artur">
+                    </div>
+                    <div class="wrapper_input_log">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Artur@gmail.com">
+                    </div>
+                    <div class="wrapper_input_log">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" placeholder="@1Av">
+                    </div>
+
+                    <div class="wrapper_input_log button">
+                        <button type="submit" class="button submit active ">Submit</button>
+                        <button type="submit" class="button login">Login</button>
+                    </div>
+
+                </form>
+
+            </article>
             <article class="article_toDoList"></article>
         </main>
 
@@ -37,6 +67,7 @@
 
     </div>
 
-<script src="script.js"></script>   
+    <script src="script.js"></script>
 </body>
+
 </html>
