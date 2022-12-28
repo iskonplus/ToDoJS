@@ -2,4 +2,53 @@
     margin:0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.main_wrapper{
+    width: 1200px;
+    height: 100vh;
+    border: 1px solid black;
+    margin: auto;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.wrapper_buttun_log{
+    display: flex;
+    justify-content: end;
+}
+
+.wrapper_buttun_log input{
+padding: 5px 25px;
+border-radius: 5px;
+cursor: pointer;
+}
+
+.wrapper_buttun_log :first-child{
+margin-right: 20px;
+}
+
+.article_greetings{
+    border:1px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    font-size: 34px;
+}
+
+p{
+ font-size: 16px;
+}
+
+
+
+footer{
+    border: 1px solid green;
+    height: 20px;
 }
