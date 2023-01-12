@@ -1,11 +1,11 @@
-*{
-    margin:0;
+* {
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
 }
 
-.main_wrapper{
+.main_wrapper {
     width: 1200px;
     height: 100vh;
     border: 1px solid black;
@@ -14,107 +14,129 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    position: relative;
 }
 
-.wrapper_buttun_log{
+.natification.active,
+.natification {
+    position: absolute;
+    max-width: 320px;
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 15px 20px;
+    background-color: rgb(232, 230, 230);
+    top: 25%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    transition: 1s;
+    text-align: center;
+}
+
+.natification {
+    top: -15%; 
+}
+
+.wrapper_buttun_log {
     display: flex;
     justify-content: end;
 }
 
-.button{
-padding: 5px 25px;
-border-radius: 5px;
-cursor: pointer;
+.button {
+    padding: 5px 25px;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-.wrapper_buttun_log :first-child{
-margin-right: 20px;
+.wrapper_buttun_log :first-child {
+    margin-right: 20px;
 }
 
 /* --------------------greetings---------------- */
 
-.article_greetings{
+.article_greetings {
     display: none;
 }
 
-.article_greetings.active{
+.article_greetings.active {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-h1{
+h1 {
     font-size: 34px;
 }
 
-p{
- font-size: 16px;
+p {
+    font-size: 16px;
 }
 
 /* ---------article registration_or_logIn---------- */
 
-.registration_or_logIn{
+.registration_or_logIn {
     display: none;
 }
 
-.registration_or_logIn.active{
+.registration_or_logIn.active {
     display: block;
 }
 
-.registration_or_logIn h2{
+.registration_or_logIn h2 {
     text-align: center;
     margin-bottom: 20px;
 }
 
-.registration_or_logIn form{
+.registration_or_logIn form {
     width: 600px;
     margin: auto;
     display: flex;
     flex-direction: column;
 }
 
-.wrapper_input_log.name{
+.wrapper_input_log.name {
     display: none;
 }
 
-.wrapper_input_log.name.active{
+.wrapper_input_log.name.active {
     display: flex;
 }
 
-.wrapper_input_log{
-display: flex;
-justify-content: space-between;
-align-items: center;
-margin-bottom: 15px;
+.wrapper_input_log {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
 }
 
-.registration_or_logIn form input{
-width: 85%;
-padding: 5px 10px;
+.registration_or_logIn form input {
+    width: 85%;
+    padding: 5px 10px;
 }
 
-.wrapper_input_log.button{
+.wrapper_input_log.button {
     width: 100%;
     display: flex;
     justify-content: end;
     padding: 0px;
 }
 
-.button.submit{
+.button.submit {
     display: none;
 }
-.button.submit.active{
+
+.button.submit.active {
     display: flex;
 }
 
-.button.login{
+.button.login {
     display: none;
 }
-.button.login.active{
+
+.button.login.active {
     display: flex;
 }
 
-footer{
+footer {
     border: 1px solid green;
     height: 20px;
 }

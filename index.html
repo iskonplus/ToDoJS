@@ -10,8 +10,9 @@
 </head>
 
 <body>
-
     <div class="main_wrapper">
+
+        <div class="natification"></div>
 
         <header>
             <div class="wrapper_buttun_log">
@@ -37,11 +38,11 @@
             <article class="article registration_or_logIn">
                 <h2>Enter your details</h2>
 
-                <form action="">
+                <form action="#" id="form">
 
                     <div class="wrapper_input_log name active">
                         <label for="name">Name</label>
-                        <input type="text" name="name" id="name" placeholder="Artur">
+                        <input  type="text" name="name" id="name" placeholder="Artur" required >
                     </div>
                     <div class="wrapper_input_log">
                         <label for="email">Email</label>
@@ -53,7 +54,7 @@
                     </div>
 
                     <div class="wrapper_input_log button">
-                        <button type="submit" class="button submit active ">Submit</button>
+                        <button type="submit" class="button submit active" >Submit</button>
                         <button type="submit" class="button login">Login</button>
                     </div>
 
